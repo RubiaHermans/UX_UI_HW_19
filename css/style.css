@@ -1,24 +1,11 @@
 
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-KV05DF5B0Z');
-
-
-/* Navbar Styles */
-.inline-block {
-    display: inline-block;
-    vertical-align:middle;
-}
-
 .logo {
     width: 22%;
     padding: 1%;
     text-align: center;
 }
 
-nav {
+/*nav {
     width: 65%;
     padding: 5%;
     font-family:Arial, Helvetica, sans-serif;
@@ -26,160 +13,126 @@ nav {
 }
 
 /* Align unordered list to the right */
-ul {
-    width: 50%;
-    margin-left: auto;
-}
 
-/* Hero image styles */
-.heroImg {
-    height: 600px;
-    padding: 25px;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-/* Content styles */
-.content {
-    width: 500px;
-    margin: 0 auto;
-}
-
-button{
-    background-color:white;
-    margin-bottom:3%;
-    font-family: Arial, Helvetica, sans-serif;
-    height: 25px;
-}
 
 #panel, #flip {
-  padding: 5px;
+  margin-top: 20px;
+  padding: 20px;
   text-align: center;
-  background-color: hotpink;
-  border: solid 1px hotpink;
+  border-radius: 20px;
+  background-color: rgb(235, 151, 193);
+  border: solid 3px rgb(241, 181, 211);
 }
 
 #panel {
   padding: 50px;
+  margin-top: 0;
   display: none;
 }
 /* Footer styles */
-footer {
-    background-color: black;
-    padding: 1%;
-    color:white; 
-    font-family:Arial, Helvetica, sans-serif;
-    text-align:right;
-}
-
-footer ul {
+body {
+    margin: 0;
+  }
+  header {
+    background-color: white;
+    padding: 15px;
+  }
+  header ul {
+    float: right;
+    color: black;
+  }
+  header li {
     display: inline-block;
-    vertical-align: top;
-    padding: 1%;
-}
-
-.flexContainer {
+    padding: 0px 5px;
+  }
+  header p {
+    display: inline-block;
+  }
+  .heroImg {
+    background-color: #EBEBEB;
+    padding: 100px 15px;
+  }
+  .content {
+    margin: 0 auto;
+    padding: 50px;
+    background-color: #FFFFFF;
+    text-align: center;
+  }
+  button {
+    padding: 15px;
+    background-color: white;
+    color: black;
+    border: 2px solid black; 
+    font-size: 15px;
+    border-radius: 4px;
+  }
+  footer {
+    background-color: #373738;
+    padding: 5px;
+    color: white;
+  }
+  footer ul {
+    list-style: none;
+    padding-left: 5px;
+  }
+  footer li {
+    display: inline-block;
+    padding: 0px 7px;
+  }
+  .heading {
+    text-align: center;
+    padding: 15px 5px;
+    font-size: 30px;
+  }
+  /* My UX Skills Section */
+  .flexContainer {
     display: flex;
-    justify-content: space-between;
+    padding: 60px 30px;
+  }
+  .flexContainer div {
+    padding: 25px;
   }
   
-.mySkills  {
-        display: flex;
-        vertical-align: top;
-        height: 500px;
-        padding: 25px;
-        /* background-color: #e96fe9; */
-        flex-wrap: wrap;
-        align-content: stretch;
-        justify-content: center;
-   
-}
-
-.mySkills .flexContainer > div {
-    width: 33%;
-    margin: 10px;
-    padding: 20px;
-    font-size: 16px;
-    text-align: center;
-    background-color: white;
-}
-
-.mySkills .flexContainer > div img {
-    width: 70px; 
-    height: 70px; 
-}
-
-
-/* Apply CSS Grid to workGrid container */
-.workGrid {
+  /* My Work Section */
+  .myWork {
+    padding: 60px 30px;
+    padding-top: 0;
+    background-color:white;
+  }
+  .workGrid {
     display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 350px 350px 350px;
     grid-template-areas:
-        "project1 project2"
-        "project3 project4"
-        "viewAll viewAll";
-    grid-template-rows: 500px 500px 500px 
-    70px; 
-    grid-template-columns: 1fr 1fr; /* Adjust column widths as needed */
-    gap: 15px; /* Adjust gap between grid items */
-}
-
-/* Define named grid areas for each grid item */
-.workGrid > div:nth-child(1) {
-    grid-area: project1;
-}
-
-.workGrid > div:nth-child(2) {
-    grid-area: project2;
-}
-
-.workGrid > div:nth-child(3) {
-    grid-area: project3;
-}
-
-.workGrid > div:nth-child(4) {
-    grid-area: project4;
-}
-
-/* Style grid items */
-.workGrid > div {
-    background-color: #f1f1f1;
-    padding: 20px;
-}
-
-/* Style project titles */
-.workGrid h4 {
-    margin-top: 10px;
-    margin-bottom: 5px;
-}
-
-/* Style buttons */
-.workGrid button {
-    background-color: #dbdbdb;
-    color: rgb(0, 0, 0);
-    padding: 21px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-.workGrid button:hover {
-    background-color: #e96fe9;
-
-}
-
-@media only screen and (max-width:600)
-{
-    .workGrid {
-        grid-template-areas:
-            "project1"
-            "project2"
-            "project3"
-            "project4"
-            "viewAll";
-        grid-template-rows: 500px 500px 50px; 
-        grid-template-columns: 1fr; 
-        gap: 20px; 
-    }
-    .workGrid > div {
-        width: 100%; 
-    }
-}
+    "img1 content1"
+    "img2 content2"
+    "img3 content3"
+    ;
+  }
+  .workGrid img {
+    width: 100%;
+    margin: 0 auto;
+    display: block;
+  }
+  .img1 {
+    grid-area: img1;
+  }
+  .img2 {
+    grid-area: img2;
+  }
+  .img3 {
+    grid-area: img3;
+  }
+  .img1, .img2, .img3, .content1, .content2, .content3 {
+    padding: 80px;
+  }
+  .content1 {
+    grid-area: content1;
+  }
+  .content2 {
+    grid-area: content2;
+  }
+  .content3 {
+    grid-area: content3;
+  }
+  
