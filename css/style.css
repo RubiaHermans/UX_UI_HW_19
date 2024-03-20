@@ -5,9 +5,11 @@
     text-align: center;
 }
 
+ .workGrid p {
+    font-size: 18px;
+ }
 
-/* Align unordered list to the right */
-
+  
 #panel, #flip {
   margin-top: 20px;
   padding: 20px;
@@ -118,11 +120,13 @@ body {
   }
   .img2 {
     grid-area: img2;
+    display: flex;
+    align-items: center;
   }
   .img3 {
     grid-area: img3;
   }
-  .img1, .img2, .img3, .content1, .content2, .content3 {
+  .content1, .content2, .content3 {
     padding: 80px;
   }
   .content1 {
@@ -136,7 +140,7 @@ body {
   }
 
   section {
-    text-align: center;
+    
 }
 
   .fotter {
