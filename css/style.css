@@ -5,15 +5,8 @@
     text-align: center;
 }
 
-/*nav {
-    width: 65%;
-    padding: 5%;
-    font-family:Arial, Helvetica, sans-serif;
-    text-align:right;
-}
 
 /* Align unordered list to the right */
-
 
 #panel, #flip {
   margin-top: 20px;
@@ -34,8 +27,9 @@ body {
     margin: 0;
   }
   header {
+    font-family: Arial, Helvetica, sans-serif ;
     background-color: white;
-    padding: 15px;
+    padding: 30px;
   }
   header ul {
     float: right;
@@ -43,11 +37,14 @@ body {
   }
   header li {
     display: inline-block;
-    padding: 0px 5px;
+    padding: 15px 12px;
+    font-size: 25px;
   }
   header p {
     display: inline-block;
+    font-family: "Arial", sans-serif;
   }
+
   .heroImg {
     background-color: #EBEBEB;
     padding: 100px 15px;
@@ -55,6 +52,7 @@ body {
   .content {
     margin: 0 auto;
     padding: 50px;
+    padding-top: 0;
     background-color: #FFFFFF;
     text-align: center;
   }
@@ -67,17 +65,18 @@ body {
     border-radius: 4px;
   }
   footer {
-    background-color: #373738;
-    padding: 5px;
+    background-color:black;
+    padding:20px;
     color: white;
   }
   footer ul {
     list-style: none;
-    padding-left: 5px;
+    padding-left:0px;
   }
   footer li {
     display: inline-block;
-    padding: 0px 7px;
+    padding: 0px 10px;
+    font-size: 30px;
   }
   .heading {
     text-align: center;
@@ -135,4 +134,14 @@ body {
   .content3 {
     grid-area: content3;
   }
+
+  section {
+    text-align: center;
+}
+
+  .fotter {
+    font-size: 34px; 
+    margin: 3; 
+}
+
   
