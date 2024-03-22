@@ -117,6 +117,8 @@ body {
   }
   .img1 {
     grid-area: img1;
+    display: flex;
+    align-items: center;
   }
   .img2 {
     grid-area: img2;
@@ -125,6 +127,8 @@ body {
   }
   .img3 {
     grid-area: img3;
+    display: flex;
+    align-items: center;
   }
   .content1, .content2, .content3 {
     padding: 80px;
@@ -139,13 +143,11 @@ body {
     grid-area: content3;
   }
 
-  section {
-    
-}
 
   .fotter {
     font-size: 34px; 
-    margin: 3; 
+    margin: 0; 
+    text-wrap: center;
 }
 
   
